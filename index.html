@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="images/icons/Icon-App-76x76.png">
+<link rel="icon" href="images/icon.png">
 
 
 <!-- <link rel="apple-touch-icon" href="images/icons/Icon-App-60x60.png">
@@ -20,14 +20,23 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 </style>
+<script type="text/javascript">
+  setTimeout(function () {
+    if(window.location.hash != '#r') {
+        window.location.hash = 'r';
+        window.location.reload(1);
+    }
+}, 5);  // After 5 secs
+  // window.setTimeout(function(){location.reload()},5)
+</script>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:8px;">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:5px;">
     
-    <img class="w3-image" src="images/logo.png" alt="Hamburger Catering" width="80" height="80">
-    <a href="#home" class="w3-bar-item w3-button">Ursatz</a>
+    <img class="w3-image" src="images/logo.png" width="80" height="80">
+    <a href="#home" style="font-size: 45px" class="w3-bar-item w3-button"><span style="font-style: italic;">Ursatz</span></a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -38,10 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+<header style="margin-top: 50px" class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
   <img class="w3-image" src="images/oster.png" alt="Hamburger Catering" width="1600" height="800">
   <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Ursatz - Schenkerian Graph Project</h1>
+    <h1 class="w3-xxlarge"><span style="font-style: italic;">Ursatz</span> - Schenkerian Graph Project</h1>
   </div>
 </header>
 
@@ -55,9 +64,9 @@ h1, h2, h3, h4, h5, h6 {
     </div>
 
     <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Ursatz</h1><br>
+      <h1 class="w3-center">About <span style="font-style: italic;">Ursatz</span></h1><br>
       <h5 class="w3-center">Schenkerian Graph Project</h5>
-      <p class="w3-large">The goal of <span class="w3-tag w3-light-grey">Ursatz</span> project is to build a web-based platform allowing scholars to create and edit digital versions of Schenkerian graphs, and to provide a space for sharing Schenkerian graphs in order to intensify and ease the exchange of Schenkerian Analysis.  </p>
+      <p class="w3-large">The goal of <span class="w3-tag w3-light-grey" style="font-style: italic;">Ursatz</span> project is to build a web-based platform allowing scholars to create and edit digital versions of Schenkerian graphs, and to provide a space for sharing Schenkerian graphs in order to intensify and ease the exchange of Schenkerian Analysis.  </p>
       <p class="w3-large w3-text-grey w3-hide-medium">We aim to start with the open-source project NEON and use the source code to do further work. We will modify the MEI files and their visualization in order to export images of Schenkerian Graphs. In this case, only score editing techniques would be developed. This should allow users to import their images to the interface, and use them as background images to add notes, exactly the same way as NEON. This approach prevents users from forgetting details while transcribing a score to a computer.  </p>
       <p class="w3-large w3-text-grey w3-hide-medium">Subsequently, we aim to build a forum for scholars to share their digitalized versions of Schenkerian Graphs. We encourage people to share their copies, digital files and written works of their graphs for exchange purposes.  </p>
       <p class="w3-large w3-text-grey w3-hide-medium">Once enough data is collected, techniques of optical music recognition of Schenkerian Graphs could be developed as data would be used for neural network training purposes.  </p>
@@ -83,14 +92,6 @@ h1, h2, h3, h4, h5, h6 {
       <h4>Eto Sun</h4>
       <p class="w3-text-grey">Co-Founder</p><br>
     
-      <!-- <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p> -->    
     </div>
     
     <div class="w3-col l6 w3-padding-large">
